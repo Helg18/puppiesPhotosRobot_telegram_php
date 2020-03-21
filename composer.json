@@ -5,10 +5,12 @@
     "require": {
         "irazasyed/telegram-bot-sdk": "^3.0",
         "vlucas/phpdotenv": "^4.1",
-        "guzzlehttp/guzzle": "^6.5"
+        "guzzlehttp/guzzle": "^6.5",
+        "psr/log": "^1.0"
     },
     "require-dev": {
-        "kint-php/kint": "^3.3"
+        "kint-php/kint": "^3.3",
+        "larapack/dd": "^1.0"
     },
     "license": "GPL 3.0",
     "autoload": {
