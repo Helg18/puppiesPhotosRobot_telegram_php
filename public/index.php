@@ -45,7 +45,7 @@ if (getenv("IS_PRODUCTION") === 'true' ? true : false) {
 
 // Obteniendo los mensajes y seteando las variables principales
 try {
-    $updates = $bot->getUpdates();
+    $updates = $bot->getWebhookUpdate();
 
     // Si no hay updates, romper el proceso
     if (!isset($updates[0])) { die(500); }
