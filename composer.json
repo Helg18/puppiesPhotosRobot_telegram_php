@@ -1,0 +1,26 @@
+{
+    "name": "helg18/lorempicsumrobot",
+    "description": "LoremPicsumRobot es un bot con el que podras obtener una imagen aleatoria de internet.",
+    "type": "project",
+    "require": {
+        "irazasyed/telegram-bot-sdk": "^3.0",
+        "vlucas/phpdotenv": "^4.1",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "kint-php/kint": "^3.3"
+    },
+    "license": "GPL 3.0",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Henry Leon Gomez",
+            "email": "helg18@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
