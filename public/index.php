@@ -48,11 +48,11 @@ try {
     $updates = $bot->getWebhookUpdate();
 
     // Si no hay updates, romper el proceso
-    if (!isset($updates[0])) { die(500); }
+    if (!isset($updates)) { die(500); }
 
     // Obteniendo variables principales
-    $chat_id = $updates[0]->getMessage()->get('chat')->get('id');
-    $mesage = $updates[0]->getMessage()->get('text');
+    $chat_id = $updates->getMessage()->get('chat')->get('id');
+    $mesage = $updates->getMessage()->get('text');
     $tipo = "message";
 
 } catch (TelegramSDKException $e) {
