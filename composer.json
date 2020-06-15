@@ -6,7 +6,8 @@
         "irazasyed/telegram-bot-sdk": "^3.0",
         "vlucas/phpdotenv": "^4.1",
         "guzzlehttp/guzzle": "^6.5",
-        "psr/log": "^1.0"
+        "psr/log": "^1.0",
+      "ext-json": "*"
     },
     "require-dev": {
         "kint-php/kint": "^3.3",

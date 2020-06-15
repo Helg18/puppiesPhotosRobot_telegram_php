@@ -72,7 +72,7 @@ elseif ($mesage === '/donar') {
 Tu aporte sera de gran ayuda para seguir trayendo mas bots, con mas utilidades y cada vez mejor";;
 }
 elseif ($mesage === '/desarrolladopor') {
-    $respuesta = "@loremPicsumRobot fue desarrollado por @helg18, solo por diversion";
+    $respuesta = "@puppiesPhotosRobot fue desarrollado por @helg18, solo por diversion";
 }
 elseif ($mesage === '/random') {
     $tipo = 'photo';
@@ -87,7 +87,9 @@ elseif ($mesage === '/help') {
 
 // funcion para devolver el arreglo con el nombre de imagen y el caption en un arreglo
 function linkAndFilename($str){
-    return array_reverse(explode('/',  $str));
+    list($filename, $caption) = array_reverse(explode('/',  $str));
+    $caption = ucwords(str_replace('-', ' ', $caption));
+    return [$filename, $caption];
 }
 
 // bajar la imagen de internet y guardarla en local
